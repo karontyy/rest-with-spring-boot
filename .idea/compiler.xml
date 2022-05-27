@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rest-with-spring-boot-and-kotlin-erudio" target="11" />
+      <module name="rest-with-spring-boot-and-kotlin-erudio" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
