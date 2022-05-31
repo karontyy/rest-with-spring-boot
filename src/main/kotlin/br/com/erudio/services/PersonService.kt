@@ -48,6 +48,16 @@ class PersonService {
         return personVO
     }
 
+    fun findPersonByName(firstName: String, pageable: Pageable): PagedModel<EntityModel<PersonVO>> {
+
+        logger.info("Finding all people!")
+
+        val persons = repository.findPersonByName(firstName, pageable)
+        val vos = persons.map { p -> DozerMapper.parseObject(p, PersonVO::class.java) }
+        vos.map { p ->  p.add(linkTo(PersonController::class.java).slash(p.key).withSelfRel())}
+        return assembler.toModel(vos)
+    }
+
     fun create(person: PersonVO?) : PersonVO{
         if (person == null) throw RequiredObjectIsNullException()
         logger.info("Creating one person with name ${person.firstName}!")
