@@ -9,5 +9,5 @@ data class PersonVO (
     var lastName: String = "",
     var address: String = "",
     var gender: String = "",
-    var birthday: Date? = null
+    var birthday: Date? = null,
 )
