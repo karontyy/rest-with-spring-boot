@@ -2,7 +2,9 @@ package br.com.erudio
 
 // import java.util.HashMap
 
+import br.com.erudio.config.FileStorageConfig
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 // import org.springframework.security.crypto.password.DelegatingPasswordEncoder
 // import org.springframework.security.crypto.password.PasswordEncoder
