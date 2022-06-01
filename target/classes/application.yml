@@ -2,7 +2,7 @@ cors:
   originPatterns: http://localhost:8080,http://karonty.tech
 file:
   upload-dir: /home/runner/work/rest_with_spring_boot/uploadDir
-#  upload-dir: /Users/bersoncrios/uploads
+#  upload-dir: /Users/bersoncrios/uploads-s
 security:
   jwt:
     token:
